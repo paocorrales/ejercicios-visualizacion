@@ -1,0 +1,78 @@
+---
+title: "Escalas y anotaciones"
+webr: 
+  packages: ['ggplot2', 'datos', 'ggforce'] # Install R packages on document open
+  cell-options:
+    autorun: true
+filters:
+  - webr 
+---
+
+A continuación encontrarás una serie de ejercicios para resolver. Cada uno está asociado a un bloque de código donde podés escribir, modificar y ejecutar código de R para ver el resultado. 
+Tené en cuenta que al cerrar esta pestaña del explorador, el código se pierde. Si querés guardar algo, copialo y pegalo en un archivo independiente.
+
+Los paquetes `ggplot2` y `datos` ya están cargados y listos para usar.
+
+
+```{webr-r}
+#| context: setup
+library(datos)
+library(ggplot2)
+library(ggforce)
+```
+
+## Etiquetas y anotaciones
+
+El siguiente gráfico muestra la cantidad diamantes para cada tipo de corte y claridad. No tiene título y las etiquetas de los ejes y leyenda no son muy prolijos. Usá la función `labs()` para agregar una nueva capa al gráfico que resuelta este problema.
+
+
+```{webr-r}
+#| autorun: true
+
+diamantes |> 
+  ggplot(aes(corte)) +
+  geom_bar(aes(fill = claridad))
+
+#Agrega la capa que falta acá
+```
+
+Ahora queremos resaltar el diamante de mayor quilate en la base de datos. Usá alguna función de ggforce para agregar una anotación que lo resalté. Podés probar, por ejemplo, con `geom_mark_circle()` o `geom_mark_elipse()`. Recordá que tendrás que usar el argumento filter para quedarte con el máximo.
+
+```{webr-r}
+diamantes |> 
+  ggplot(aes(quilate, precio)) +
+  geom_point(aes(color = claridad))
+
+# Agregá la capa con la anotación acá
+```
+
+## Escalas de colores
+
+Reutilizando el gráfico de la cantidad de diamantas (primer ejercicio), agregá ahora una capa para modificar la escala de colores. 
+
+```{webr-r}
+# Agregá tu código acá
+
+```
+
+
+¡Último desafío! 
+
+Intentá reprodicir este gráfico usando `scale_fill_manual()`, no tienen que ser exacto pero se debe ver igual de lindo!
+
+```{r}
+#| echo: false
+library(datos)
+library(ggplot2)
+
+diamantes |> 
+  ggplot(aes(corte)) +
+  geom_bar(aes(fill = claridad)) +
+  scale_fill_manual(values = c("orange", "yellow", "red", "pink", "blue", "black", "green", "grey"))
+```
+
+```{webr-r}
+# Agregá tu código acá
+
+```
+

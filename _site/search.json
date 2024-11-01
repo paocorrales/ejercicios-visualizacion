@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Escalas y anotaciones",
+    "section": "",
+    "text": "A continuación encontrarás una serie de ejercicios para resolver. Cada uno está asociado a un bloque de código donde podés escribir, modificar y ejecutar código de R para ver el resultado. Tené en cuenta que al cerrar esta pestaña del explorador, el código se pierde. Si querés guardar algo, copialo y pegalo en un archivo independiente.\nLos paquetes ggplot2 y datos ya están cargados y listos para usar."
+  },
+  {
+    "objectID": "index.html#etiquetas-y-anotaciones",
+    "href": "index.html#etiquetas-y-anotaciones",
+    "title": "Escalas y anotaciones",
+    "section": "Etiquetas y anotaciones",
+    "text": "Etiquetas y anotaciones\nEl siguiente gráfico muestra la cantidad diamantes para cada tipo de corte y claridad. No tiene título y las etiquetas de los ejes y leyenda no son muy prolijos. Usá la función labs() para agregar una nueva capa al gráfico que resuelta este problema.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nAhora queremos resaltar el diamante de mayor quilate en la base de datos. Usá alguna función de ggforce para agregar una anotación que lo resalté. Podés probar, por ejemplo, con geom_mark_circle() o geom_mark_elipse(). Recordá que tendrás que usar el argumento filter para quedarte con el máximo.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#escalas-de-colores",
+    "href": "index.html#escalas-de-colores",
+    "title": "Escalas y anotaciones",
+    "section": "Escalas de colores",
+    "text": "Escalas de colores\nReutilizando el gráfico de la cantidad de diamantas (primer ejercicio), agregá ahora una capa para modificar la escala de colores.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n¡Último desafío!\nIntentá reprodicir este gráfico usando scale_fill_manual(), no tienen que ser exacto pero se debe ver igual de lindo!\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  }
+]
