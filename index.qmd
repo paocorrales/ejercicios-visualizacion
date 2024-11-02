@@ -56,7 +56,7 @@ Reutilizando el gráfico de la cantidad de diamantas (primer ejercicio), agregá
 ```
 
 
-¡Último desafío! 
+### ¡Último desafío! 
 
 Intentá reprodicir este gráfico usando `scale_fill_manual()`, no tienen que ser exacto pero se debe ver igual de lindo!
 

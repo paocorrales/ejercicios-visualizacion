@@ -366,7 +366,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"editor-quick-suggestions":"false","warning":"true","dpi":72,"fig-height":5,"results":"markup","comment":"","classes":"","autorun":"true","message":"true","editor-font-scale":"1","read-only":"false","context":"setup","editor-word-wrap":"true","fig-cap":"","out-width":"700px","editor-max-height":"","output":"true","fig-width":7,"label":"unnamed-chunk-1","out-height":""},"code":"library(datos)\nlibrary(ggplot2)\nlibrary(ggforce)","id":1},{"options":{"editor-quick-suggestions":"false","warning":"true","dpi":72,"fig-height":5,"results":"markup","comment":"","classes":"","autorun":"true","message":"true","editor-font-scale":"1","read-only":"false","context":"interactive","editor-word-wrap":"true","fig-cap":"","out-width":"700px","editor-max-height":"","output":"true","fig-width":7,"label":"unnamed-chunk-2","out-height":""},"code":"diamantes |> \n  ggplot(aes(corte)) +\n  geom_bar(aes(fill = claridad))\n\n#Agrega la capa que falta acá","id":2},{"options":{"editor-quick-suggestions":"false","warning":"true","dpi":72,"fig-height":5,"results":"markup","comment":"","classes":"","autorun":"true","message":"true","editor-font-scale":"1","read-only":"false","context":"interactive","editor-word-wrap":"true","fig-cap":"","out-width":"700px","editor-max-height":"","output":"true","fig-width":7,"label":"unnamed-chunk-3","out-height":""},"code":"diamantes |> \n  ggplot(aes(quilate, precio)) +\n  geom_point(aes(color = claridad))\n\n# Agregá la capa con la anotación acá","id":3},{"options":{"editor-quick-suggestions":"false","warning":"true","dpi":72,"fig-height":5,"results":"markup","comment":"","classes":"","autorun":"true","message":"true","editor-font-scale":"1","read-only":"false","context":"interactive","editor-word-wrap":"true","fig-cap":"","out-width":"700px","editor-max-height":"","output":"true","fig-width":7,"label":"unnamed-chunk-4","out-height":""},"code":"# Agregá tu código acá","id":4},{"options":{"editor-quick-suggestions":"false","warning":"true","dpi":72,"fig-height":5,"results":"markup","comment":"","classes":"","autorun":"true","message":"true","editor-font-scale":"1","read-only":"false","context":"interactive","editor-word-wrap":"true","fig-cap":"","out-width":"700px","editor-max-height":"","output":"true","fig-width":7,"label":"unnamed-chunk-5","out-height":""},"code":"# Agregá tu código acá","id":5}];
+globalThis.qwebrCellDetails = [{"code":"library(datos)\nlibrary(ggplot2)\nlibrary(ggforce)","id":1,"options":{"context":"setup","output":"true","editor-quick-suggestions":"false","out-width":"700px","read-only":"false","autorun":"true","classes":"","warning":"true","results":"markup","label":"unnamed-chunk-1","fig-width":7,"fig-cap":"","fig-height":5,"dpi":72,"out-height":"","editor-max-height":"","editor-word-wrap":"true","editor-font-scale":"1","comment":"","message":"true"}},{"code":"diamantes |> \n  ggplot(aes(corte)) +\n  geom_bar(aes(fill = claridad))\n\n#Agrega la capa que falta acá","id":2,"options":{"context":"interactive","output":"true","editor-quick-suggestions":"false","out-width":"700px","read-only":"false","autorun":"true","classes":"","warning":"true","results":"markup","label":"unnamed-chunk-2","fig-width":7,"fig-cap":"","fig-height":5,"dpi":72,"out-height":"","editor-max-height":"","editor-word-wrap":"true","editor-font-scale":"1","comment":"","message":"true"}},{"code":"diamantes |> \n  ggplot(aes(quilate, precio)) +\n  geom_point(aes(color = claridad))\n\n# Agregá la capa con la anotación acá","id":3,"options":{"context":"interactive","output":"true","editor-quick-suggestions":"false","out-width":"700px","read-only":"false","autorun":"true","classes":"","warning":"true","results":"markup","label":"unnamed-chunk-3","fig-width":7,"fig-cap":"","fig-height":5,"dpi":72,"out-height":"","editor-max-height":"","editor-word-wrap":"true","editor-font-scale":"1","comment":"","message":"true"}},{"code":"# Agregá tu código acá","id":4,"options":{"context":"interactive","output":"true","editor-quick-suggestions":"false","out-width":"700px","read-only":"false","autorun":"true","classes":"","warning":"true","results":"markup","label":"unnamed-chunk-4","fig-width":7,"fig-cap":"","fig-height":5,"dpi":72,"out-height":"","editor-max-height":"","editor-word-wrap":"true","editor-font-scale":"1","comment":"","message":"true"}},{"code":"# Agregá tu código acá","id":5,"options":{"context":"interactive","output":"true","editor-quick-suggestions":"false","out-width":"700px","read-only":"false","autorun":"true","classes":"","warning":"true","results":"markup","label":"unnamed-chunk-5","fig-width":7,"fig-cap":"","fig-height":5,"dpi":72,"out-height":"","editor-max-height":"","editor-word-wrap":"true","editor-font-scale":"1","comment":"","message":"true"}}];
 
 </script>
 <script type="module">
@@ -1662,7 +1662,10 @@ globalThis.qwebrExecuteCode = async function (
    
   <ul>
   <li><a href="#etiquetas-y-anotaciones" id="toc-etiquetas-y-anotaciones" class="nav-link active" data-scroll-target="#etiquetas-y-anotaciones">Etiquetas y anotaciones</a></li>
-  <li><a href="#escalas-de-colores" id="toc-escalas-de-colores" class="nav-link" data-scroll-target="#escalas-de-colores">Escalas de colores</a></li>
+  <li><a href="#escalas-de-colores" id="toc-escalas-de-colores" class="nav-link" data-scroll-target="#escalas-de-colores">Escalas de colores</a>
+  <ul class="collapse">
+  <li><a href="#último-desafío" id="toc-último-desafío" class="nav-link" data-scroll-target="#último-desafío">¡Último desafío!</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1990,7 +1993,8 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>Reutilizando el gráfico de la cantidad de diamantas (primer ejercicio), agregá ahora una capa para modificar la escala de colores.</p>
 <div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>¡Último desafío!</p>
+<section id="último-desafío" class="level3">
+<h3 class="anchored" data-anchor-id="último-desafío">¡Último desafío!</h3>
 <p>Intentá reprodicir este gráfico usando <code>scale_fill_manual()</code>, no tienen que ser exacto pero se debe ver igual de lindo!</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -2005,6 +2009,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

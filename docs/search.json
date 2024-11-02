@@ -18,7 +18,7 @@
     "href": "index.html#escalas-de-colores",
     "title": "Escalas y anotaciones",
     "section": "Escalas de colores",
-    "text": "Escalas de colores\nReutilizando el gráfico de la cantidad de diamantas (primer ejercicio), agregá ahora una capa para modificar la escala de colores.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n¡Último desafío!\nIntentá reprodicir este gráfico usando scale_fill_manual(), no tienen que ser exacto pero se debe ver igual de lindo!\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "Escalas de colores\nReutilizando el gráfico de la cantidad de diamantas (primer ejercicio), agregá ahora una capa para modificar la escala de colores.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n¡Último desafío!\nIntentá reprodicir este gráfico usando scale_fill_manual(), no tienen que ser exacto pero se debe ver igual de lindo!\n\n\n\n\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "about.html",
